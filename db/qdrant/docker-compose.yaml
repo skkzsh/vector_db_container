@@ -1,0 +1,12 @@
+version: "3"
+services:
+  qdrant_service:
+    container_name: qdrant_container
+    image: qdrant/qdrant
+    # build: .
+    ports:
+      - "6333:6333"
+    environment:
+      TZ: Asia/Tokyo
+    volumes:
+      - $PWD/storage:/qdrant/storage
