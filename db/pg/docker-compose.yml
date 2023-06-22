@@ -1,0 +1,14 @@
+version: "3"
+services:
+  pg_service:
+    container_name: pg_container
+    image: ankane/pgvector
+    # image: skkzsh/pgvector
+    # build: .
+    ports:
+      - "54321:5432"
+    environment:
+      TZ: Asia/Tokyo
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+      - $PWD/data:/var/lib/postgresql/data

@@ -4,6 +4,7 @@ services:
     container_name: redis_container
     # image: redis
     image: redis/redis-stack-server
+    # image: skkzsh/redis-stack-server
     # build: .
     ports:
       - "6379:6379"
