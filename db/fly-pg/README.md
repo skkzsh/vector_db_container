@@ -1,0 +1,4 @@
+- https://github.com/pgvector/pgvector/blob/master/Dockerfile
+- https://github.com/fly-apps/postgres-flex
+- https://github.com/fly-apps/postgres-ha
+- https://community.fly.io/t/adding-pgvector-to-fly-postgres/12202
