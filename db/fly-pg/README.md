@@ -2,3 +2,7 @@
 - https://github.com/fly-apps/postgres-flex
 - https://github.com/fly-apps/postgres-ha
 - https://community.fly.io/t/adding-pgvector-to-fly-postgres/12202
+
+```shell
+fly pg create --image-ref skkzsh/fly-pgvector
+```
