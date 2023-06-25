@@ -2,7 +2,6 @@ version: "3"
 services:
   redis_service:
     container_name: redis_container
-    # image: redis
     image: redis/redis-stack-server
     # image: skkzsh/redis-stack-server
     # build: .
