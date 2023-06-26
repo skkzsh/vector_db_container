@@ -7,7 +7,7 @@ docker compose push
 
 # Create
 ```shell
-fly pg create --image-ref skkzsh/fly-pgvector [-n <pg-app-name>] [-r nrt]
+fly pg create --image-ref skkzsh/fly-pgvector [-n skkzsh-pgvector] [-p] [-r nrt]
 
 fly pg ls
 ```
