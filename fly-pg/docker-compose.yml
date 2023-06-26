@@ -4,5 +4,6 @@ services:
     container_name: fly_pg_container
     image: skkzsh/fly-pgvector
     build: .
-    environment:
-      TZ: Asia/Tokyo
+    # environment:
+    #   TZ: Asia/Tokyo
+
