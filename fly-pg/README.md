@@ -7,11 +7,9 @@ docker compose push
 
 # Create
 ```shell
-fly pg create --image-ref skkzsh/fly-pgvector
+fly pg create --image-ref skkzsh/fly-pgvector [-n <pg-app-name>] [-r nrt]
 
 fly pg ls
-
-# fly config save --app <pg-app-name>
 ```
 
 # Enable PGVector
@@ -22,7 +20,13 @@ create extension vector;
 select * from pg_extension;
 ```
 
-# Connect from external 
+# Connect via port forwarding
+```shell
+fly proxy 15432:5432 [-a <pg-app-name>]
+pgcli -p 15432
+```
+
+# Connect from external
 ```shell
 fly ips ls [-a <pg-app-name>]
 fly services ls [-a <pg-app-name>]
@@ -30,7 +34,7 @@ fly ips allocate-v6 [-a <pg-app-name>]
 fly ips ls [-a <pg-app-name>]
 fly services ls [-a <pg-app-name>]
 
-pgcli -h <pg-app-name>.fly.dev 
+pgcli -h <pg-app-name>.fly.dev
 ```
 
 # See also
