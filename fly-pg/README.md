@@ -18,6 +18,7 @@ fly pg connect [-a <pg-app-name>]
 
 create extension vector;
 select * from pg_extension;
+\dx
 ```
 
 # Connect via port forwarding
