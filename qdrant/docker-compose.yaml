@@ -1,4 +1,3 @@
-version: "3"
 services:
   qdrant_service:
     container_name: qdrant_container
