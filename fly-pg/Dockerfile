@@ -1,5 +1,6 @@
-ARG PG_MAJOR=15
+ARG PG_MAJOR=17
 FROM flyio/postgres-flex:${PG_MAJOR}
+ARG PG_MAJOR
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends postgresql-${PG_MAJOR}-pgvector \
